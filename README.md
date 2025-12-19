@@ -11,7 +11,7 @@ Which shipping lanes are most cost-efficient, and what optimizations can be sugg
 Using city-level shipment, cost, mileage, and revenue data, this project uses geospatial analysis and clustering to recommend optimal warehouse locations and identify high-efficiency lanes.
 
 ## Key Features
- 1. Dispatch Heat Map
+ #### 1. Dispatch Heat Map
 
 A city-wise and state-wise heatmap showing:
 
@@ -25,7 +25,7 @@ Revenue
 
 Helps visualize dispatch intensity and geographical demand patterns.
 
- 2. Mapbox Geospatial Visualization
+#### 2. Mapbox Geospatial Visualization
 
 Each origin city is geocoded using GeoPy (Nominatim)
 
@@ -37,7 +37,7 @@ Cost intensity
 
 Shipment volume
 
- 3. Warehouse Hub Recommendation (Network Design)
+ #### 3. Warehouse Hub Recommendation (Network Design)
 
 Using K-Means clustering on standardized variables:
 
@@ -55,7 +55,7 @@ Optimal warehouse hubs (closest to cluster centroids)
 
 Cities that minimize intra-cluster distances → lower overall transportation costs.
 
- 4. Lane Efficiency Analysis
+#### 4. Lane Efficiency Analysis
 
 For each Origin → Destination pair:
 
@@ -80,7 +80,7 @@ Possible multimodal or route optimization opportunities
 Python, Pandas, NumPy, Matplotlib, Seaborn, Plotly, Scikit-Learn, GeoPy
 
 ### Project Workflow
- Step 1: Data Loading & Cleaning
+#### Step 1: Data Loading & Cleaning
 
 Load Excel file
 
@@ -88,19 +88,19 @@ Remove unnecessary columns
 
 Compute city-level aggregation
 
- Step 2: EDA & Visualization
+#### Step 2: EDA & Visualization
 
 Bar charts for shipments, cost, miles, revenue
 
 Heatmaps for state/city patterns
 
- Step 3: Geocoding
+#### Step 3: Geocoding
 
 Map each OriginCity to latitude and longitude
 
 Create interactive dispatch density map
 
- Step 4: Clustering for Warehouse Suggestions
+#### Step 4: Clustering for Warehouse Suggestions
 
 Scale features using StandardScaler
 
@@ -108,7 +108,7 @@ Determine cluster count with Elbow Method
 
 Identify warehouse hub cities
 
- Step 5: Lane-Level Cost Optimization
+#### Step 5: Lane-Level Cost Optimization
 
 Compute cost per mile
 
@@ -117,15 +117,15 @@ Identify efficient lanes
 Visualize top cost-efficient shipping lanes
 
 ### Insights Delivered
- 1. Dispatch Concentration Zones
+#### 1. Dispatch Concentration Zones
 
 Heatmaps show where demand is high and where logistics activity is concentrated.
 
- 2. Optimal Warehouse Locations
+#### 2. Optimal Warehouse Locations
 
 K-Means clustering suggests ideal central cities within each cluster to reduce mileage and cost.
 
- 3. Cost-Efficient Shipping Lanes
+#### 3. Cost-Efficient Shipping Lanes
 
 Identifies lanes with:
 
@@ -135,7 +135,7 @@ High shipment volumes
 
 Opportunities for consolidation
 
- 4. Potential Optimization Suggestions
+#### 4. Potential Optimization Suggestions
 
 Place warehouses closer to cluster centroids
 
