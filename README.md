@@ -146,3 +146,54 @@ Renegotiate contracts or explore alternate routing on high-cost lanes
 Consider multimodal options for cost-heavy corridors
 
 ## [PowerBI Dashboard](https://app.powerbi.com/groups/me/reports/14fec0b8-ca11-469f-9c28-40e9ea6e27c1/115554f31d00c0a871a1?experience=power-bi)
+
+This project also includes an interactive Power BI dashboard to visually explore operational metrics, dispatch patterns, and lane-level performance. The following visuals were created as part of the analysis:
+
+#### 1. KPI Cards – Total Miles, Total Revenue & Shipping Cost
+
+Three Card visuals highlight the core business KPIs:
+
+Total Miles Covered
+
+Total Revenue Generated
+
+Total Shipping Cost
+
+✨ Purpose:
+These top-level indicators give a quick snapshot of logistics performance and help compare cost vs. revenue vs. distance covered.
+
+#### 2. Revenue & Total Miles by Location
+
+A clustered column chart / bar visual shows:
+
+Revenue by Origin or Destination Location
+
+Total Miles by Location
+
+✨ Purpose:
+Identify which cities or states contribute the most distance vs. revenue.
+Useful to pinpoint high-mile but low-revenue routes or high-revenue dispatch hubs.
+
+#### 3. Map Visual – Revenue by Origin City
+
+A Filled Map / Bubble Map displays:
+
+Each Origin City
+
+Revenue amount represented by bubble size/color
+
+✨ Purpose:
+Gives a geospatial overview of revenue hotspots.
+Helps validate warehouse placement decisions from the network optimization model.
+
+#### 4. Funnel Chart – Trip ID by Destination State
+
+A Funnel Chart visualizes:
+
+Number of Trip IDs grouped by Destination State
+
+Each state represented with a different color
+
+✨ Purpose:
+Shows shipment distribution by destination state.
+Useful for understanding demand flow and identifying states with high inbound shipment volume
